@@ -1,8 +1,14 @@
-<div class="hero-unit">
-<h1>Welcome to the Big Nothing</h1>
-<p>You've found the page with nothing but a link to my stupid <a href="http://www.omarlee.com">site</a>
+<% if user_signed_in? %>
+<h1>Logged-in View</h1>
+<p>Nothing to see, please move on. Or log out. Whatever.</a>
 </p>
+
+<%else%>
+<div class="hero-unit">
+<h1>Guest Home Page View</h1>
+<p>This page displays when you've logged in. Surprise!</p>
 <p>
-<%= link_to "Do something!","#", class: "btn btn-primary btn large" %>
+<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-primary btn large" %>
 </p>
 </div>
+<% end %>
