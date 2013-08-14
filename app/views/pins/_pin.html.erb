@@ -1,6 +1,8 @@
   <tr>
     <td><%= pin.description %></td>
     <td><%= link_to 'See it', pin %></td>
+    <% if current_user == pin.user %>
     <td><%= link_to 'Change it', edit_pin_path(pin) %></td>
     <td><%= link_to 'Fuck it', pin, method: :delete, data: { confirm: 'Really? Are you sure?' } %></td>
+    <% end %>
   </tr>
