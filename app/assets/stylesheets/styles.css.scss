@@ -10,13 +10,14 @@ $navbarBackground: white;
 
 body {
 	padding-top: 60px;
+	background-color:#f5f5f5;
 }
 
 @import 'bootstrap-responsive';
 
 .navbar-inner {
 	@include box-shadow(none !important);
-	border: 0;
+	border: 1px solid #ddd;
 }
 
 .footer {
@@ -29,17 +30,17 @@ body {
 
 /* masonry */
 .box {
-	margin-right:30px;
-	margin-top:20px;
+	margin:10px;
 	padding: 10px;
 	font-size: 11px;
 	line-height: 1.4em;
 	float:left;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	box-shadow: 1px 1px 5px #444;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px #777;
 	width: 214px;
+	background-color:#fff;
 }
 
 .box img {
