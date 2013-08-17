@@ -21,7 +21,7 @@ body {
 }
 
 .footer {
-	margin-top:50px;
+	margin-top: 50px;
 	color: $grayLight;
 	a {
 		color: $gray;
@@ -29,26 +29,26 @@ body {
 }
 
 /* masonry */
+
 .box {
-	margin:10px;
-	padding: 10px;
-	font-size: 11px;
+	margin: 5px;
+	padding: 5px;
+	font-size:11px;
 	line-height: 1.4em;
-	float:left;
+	float: left;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	box-shadow: 1px 1px 2px #777;
+	background-color: #fff;
 	width: 214px;
-	background-color:#fff;
 }
 
 .box img {
 	display: block;
-	width: 100%;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
 }
 
 .description {
